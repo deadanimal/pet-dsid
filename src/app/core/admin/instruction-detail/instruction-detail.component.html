@@ -1,0 +1,234 @@
+<div class="header pb-6">
+    <div class=" container-fluid">
+        <div class=" header-body">
+            <div class=" row align-items-center py-4">
+                <div class=" col-lg-6 col-7">
+                    <h6 class=" h2 text-dark d-inline-block mb-0">Instruction Details</h6>
+
+                    <nav aria-label="breadcrumb" class=" d-none d-md-inline-block ml-md-4">
+                        <ol class=" breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class=" breadcrumb-item">
+                                <a href="javascript:void(0)"> <i class="far fa-list-alt text-dark"> </i> </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="javascript:void(0)" class="text-dark"> Instruction </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="javascript:void(0)" class="text-dark"> List </a>
+                            </li>
+                            <li aria-current="page" class="breadcrumb-item active">
+                                Details
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt--6">
+    <div class="row">
+        <div class="col-lg-5">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="m-0">Well Status</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Rig</label>
+                                        <input class="form-control form-control-sm" disabled value="Rig AZYK">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Location</label>
+                                        <input class="form-control form-control-sm" disabled value="Location Z">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="chartdiv" style="width: 100%; height: 300px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="m-0">Action Check List</h4>
+                        </div>
+                        <div class="card-body p-0">
+                            <ul class="list-group list-group-flush" data-toggle="checklist">
+                                <li class="checklist-entry list-group-item flex-column align-items-start py-4 px-4">
+                                    <div class="checklist-item checklist-item-success">
+                                        <div class="checklist-info">
+                                            <h5 class="checklist-title mb-0">Action 1 @ Location D by Amin</h5>
+
+                                            <small> 10:30 AM </small>
+                                        </div>
+
+                                        <div>
+                                            <div class="custom-control custom-checkbox custom-checkbox-success">
+                                                <input checked="checked" class="custom-control-input"
+                                                    id="chk-todo-task-1" type="checkbox" />
+
+                                                <label class="custom-control-label" for="chk-todo-task-1">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="checklist-entry list-group-item flex-column align-items-start py-4 px-4">
+                                    <div class="checklist-item checklist-item-warning">
+                                        <div class="checklist-info">
+                                            <h5 class="checklist-title mb-0">Action 2 @ Location C by Huzree</h5>
+
+                                            <small> 10:50 AM </small>
+                                        </div>
+
+                                        <div>
+                                            <div class="custom-control custom-checkbox custom-checkbox-warning">
+                                                <input class="custom-control-input" id="chk-todo-task-2"
+                                                    type="checkbox" />
+
+                                                <label class="custom-control-label" for="chk-todo-task-2">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="checklist-entry list-group-item flex-column align-items-start py-4 px-4">
+                                    <div class="checklist-item checklist-item-info">
+                                        <div class="checklist-info">
+                                            <h5 class="checklist-title mb-0">Action 3 @ Location B by Afizi</h5>
+
+                                            <small> 11:30 AM </small>
+                                        </div>
+
+                                        <div>
+                                            <div class="custom-control custom-checkbox custom-checkbox-info">
+                                                <input class=" custom-control-input" id="chk-todo-task-3"
+                                                    type="checkbox" />
+
+                                                <label class="custom-control-label" for="chk-todo-task-3">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="checklist-entry list-group-item flex-column align-items-start py-4 px-4">
+                                    <div class="checklist-item checklist-item-danger">
+                                        <div class="checklist-info">
+                                            <h5 class="checklist-title mb-0">Action 4 @ Location A by Jun</h5>
+
+                                            <small> 12:30 PM </small>
+                                        </div>
+
+                                        <div>
+                                            <div class="custom-control custom-checkbox custom-checkbox-danger">
+                                                <input checked="checked" class="custom-control-input"
+                                                    id="chk-todo-task-4" type="checkbox" />
+
+                                                <label class="custom-control-label" for="chk-todo-task-4">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7">
+            <div clas="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="m-0">Instruction</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="chartdiv1" style="width: 100%; height: 300px"></div>
+                            <accordion [isAnimated]="true" [closeOthers]="oneAtATime" class="mt-2">
+                                <accordion-group>
+                                    <h5 class="mb-0" accordion-heading>Well Status/Goals: </h5>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Objectives</th>
+                                                <td>
+                                                    <ul>
+                                                        <li>Spud well GG-1.</li>
+                                                        <li>24” x 20” casing while drilling (CwD) to +/- 1030 m MDDF.</li>
+                                                    </ul> 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Well Status</th>
+                                                <td>
+                                                    <ul>
+                                                        <li>Velesto Naga-6 is on location & rig has been preloaded and prepared to drill.</li>
+                                                        <li>Rig floor elevation to seabed is +/- 128 m (to be confirmed by tagging with 20” x 24” shoe bit).</li>
+                                                        <li>Rig floor to top of CTU elevation 17.1m.</li>
+                                                    </ul> 
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </accordion-group>
+                                <accordion-group>
+                                    <h5 class="mb-0" accordion-heading>Equipment Checklist & Preparations</h5>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">PCSB</th>
+                                                <td>
+                                                    <ul>
+                                                        <li>Check all JSA’s for the job.</li>
+                                                    </ul> 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Velesto Naga-6</th>
+                                                <td>
+                                                    <ul>
+                                                        <li>Prepare 1502 Lo-Torq Valve for Circulating Swedge.</li>
+                                                    </ul> 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">WFT CWD</th>
+                                                <td>
+                                                    <ul>
+                                                        <li>Visually inspect casing and ensure threads are properly cleaned.</li>
+                                                    </ul> 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"> Mud Engineer</th>
+                                                <td>
+                                                    <ul>
+                                                        <li>Prepare 1 pit (500 bbls) of 12 ppg kill mud.</li>
+                                                    </ul> 
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </accordion-group>
+                            </accordion>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

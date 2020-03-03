@@ -1,0 +1,208 @@
+<div class="header pb-6">
+    <div class=" container-fluid">
+        <div class=" header-body">
+            <div class=" row align-items-center py-4">
+                <div class=" col-lg-6 col-7">
+                    <h6 class=" h2 text-dark d-inline-block mb-0">Instruction List</h6>
+
+                    <nav aria-label="breadcrumb" class=" d-none d-md-inline-block ml-md-4">
+                        <ol class=" breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class=" breadcrumb-item">
+                                <a href="javascript:void(0)"> <i class="far fa-list-alt text-dark"> </i> </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="javascript:void(0)" class="text-dark"> Instruction </a>
+                            </li>
+
+                            <li aria-current="page" class="breadcrumb-item active">
+                                List
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class=" col-lg-6 col-5 text-right">
+                    <a class=" btn btn-sm btn-success text-white" href="javascript:void(0)"> New Instuction</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt--6">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Instruction List</h4>
+                </div>
+                <div class="table-responsive">
+                    <table class="table align-items-center table-flush">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Item</th>
+                                <th scope="col">No.</th>
+                                <th scope="col">Well</th>
+                                <th scope="col">Location</th>
+                                <th scope="col">Status</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="list">
+                            <tr>
+                                <th scope="row">
+                                    <div class="media align-items-center">
+                                        <a
+                                          class="avatar rounded-circle bg-white mr-3"
+                                          href="javascript:void(0)"
+                                        >
+                                            <img
+                                                alt="Image placeholder"
+                                                src="assets/img/icons/oil-well.svg"
+                                            />
+                                        </a>
+                          
+                                        <div class="media-body">
+                                            <span class="name mb-0 text-sm">
+                                                Item 1
+                                            </span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>#412411</td>
+                                <td>Well ANZ</td>
+                                <td>Location ZA</td>
+                                <td>
+                                    <span class="badge badge-pill badge-md badge-success">Completed</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm" [routerLink]="['/admin/instruction/details']">View</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <div class="media align-items-center">
+                                        <a
+                                          class="avatar rounded-circle bg-white mr-3"
+                                          href="javascript:void(0)"
+                                        >
+                                            <img
+                                                alt="Image placeholder"
+                                                src="assets/img/icons/oil-well.svg"
+                                            />
+                                        </a>
+                          
+                                        <div class="media-body">
+                                            <span class="name mb-0 text-sm">
+                                                Item 2
+                                            </span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>#412412</td>
+                                <td>Well WWK</td>
+                                <td>Location N1</td>
+                                <td>
+                                    <span class="badge badge-pill badge-md badge-warning">Pending</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm" [routerLink]="['/admin/instruction/details']">View</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <div class="media align-items-center">
+                                        <a
+                                          class="avatar rounded-circle bg-white mr-3"
+                                          href="javascript:void(0)"
+                                        >
+                                            <img
+                                                alt="Image placeholder"
+                                                src="assets/img/icons/oil-well.svg"
+                                            />
+                                        </a>
+                          
+                                        <div class="media-body">
+                                            <span class="name mb-0 text-sm">
+                                                Item 3
+                                            </span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>#412413</td>
+                                <td>Well KKL</td>
+                                <td>Location DA</td>
+                                <td>
+                                    <span class="badge badge-pill badge-md badge-success">Completed</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm" [routerLink]="['/admin/instruction/details']">View</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <div class="media align-items-center">
+                                        <a
+                                          class="avatar rounded-circle bg-white mr-3"
+                                          href="javascript:void(0)"
+                                        >
+                                            <img
+                                                alt="Image placeholder"
+                                                src="assets/img/icons/oil-well.svg"
+                                            />
+                                        </a>
+                          
+                                        <div class="media-body">
+                                            <span class="name mb-0 text-sm">
+                                                Item 4
+                                            </span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>#412414</td>
+                                <td>Well IOK</td>
+                                <td>Location DB</td>
+                                <td>
+                                    <span class="badge badge-pill badge-md badge-warning">Pending</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm" [routerLink]="['/admin/instruction/details']">View</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <div class="media align-items-center">
+                                        <a
+                                          class="avatar rounded-circle bg-white mr-3"
+                                          href="javascript:void(0)"
+                                        >
+                                            <img
+                                                alt="Image placeholder"
+                                                src="assets/img/icons/oil-well.svg"
+                                            />
+                                        </a>
+                          
+                                        <div class="media-body">
+                                            <span class="name mb-0 text-sm">
+                                                Item 5
+                                            </span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>#412415</td>
+                                <td>Well TTM</td>
+                                <td>Location PA</td>
+                                <td>
+                                    <span class="badge badge-pill badge-md badge-success">Completed</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm" [routerLink]="['/admin/instruction/details']">View</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
