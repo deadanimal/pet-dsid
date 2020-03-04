@@ -5,7 +5,8 @@ import {
   ProgressbarModule, 
   TooltipModule, 
   BsDatepickerModule,
-  AccordionModule
+  AccordionModule,
+  ModalModule
 } from 'ngx-bootstrap';
 import { RouterModule } from '@angular/router';
 
@@ -28,6 +29,7 @@ import { DatabaseVendorComponent } from './database-vendor/database-vendor.compo
 import { NoticeComponent } from './notice/notice.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SettingsComponent } from './settings/settings.component';
+import { NoticeDetailComponent } from './notice-detail/notice-detail.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,8 @@ import { SettingsComponent } from './settings/settings.component';
     DatabaseVendorComponent,
     NoticeComponent,
     ProfileComponent,
-    SettingsComponent
+    SettingsComponent,
+    NoticeDetailComponent
   ],
   imports: [
     CommonModule,
@@ -53,7 +56,8 @@ import { SettingsComponent } from './settings/settings.component';
     HttpClientModule,
     LeafletModule,
     BsDatepickerModule.forRoot(),
-    AccordionModule.forRoot()
+    AccordionModule.forRoot(),
+    ModalModule.forRoot()
   ]
 })
 export class AdminModule { }

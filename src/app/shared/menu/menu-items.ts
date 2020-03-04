@@ -44,8 +44,13 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/admin/notice',
     title: 'Notice of Operation',
-    type: 'link',
-    icontype: 'far fa-calendar-alt text-pink'
+    type: 'sub',
+    icontype: 'far fa-calendar-alt text-pink',
+    collapse: 'notice',
+    isCollapsed: true,
+    children: [
+      { path: 'list', title: 'List', type: 'link' }
+    ]
   },
   {
     path: '/admin/database',

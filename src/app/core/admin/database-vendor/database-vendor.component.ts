@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap';
 
 @Component({
   selector: 'app-database-vendor',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatabaseVendorComponent implements OnInit {
 
-  constructor() { }
+  defaultModal: BsModalRef;
+  default = {
+    keyboard: true,
+    class: "modal-dialog-centered"
+  };
+
+  constructor(
+    private modalService: BsModalService
+  ) { }
 
   ngOnInit() {
+  }
+
+  openDefaultModal(modalDefault: TemplateRef<any>) {
+    this.defaultModal = this.modalService.show(modalDefault, this.default);
   }
 
 }

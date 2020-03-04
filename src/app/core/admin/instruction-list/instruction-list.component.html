@@ -22,7 +22,7 @@
                 </div>
 
                 <div class=" col-lg-6 col-5 text-right">
-                    <a class=" btn btn-sm btn-success text-white" href="javascript:void(0)"> New Instuction</a>
+                    <a class=" btn btn-sm btn-success text-white" (click)="openDefaultModal(modalAdd)"> New Instuction</a>
                 </div>
             </div>
         </div>
@@ -52,16 +52,10 @@
                             <tr>
                                 <th scope="row">
                                     <div class="media align-items-center">
-                                        <a
-                                          class="avatar rounded-circle bg-white mr-3"
-                                          href="javascript:void(0)"
-                                        >
-                                            <img
-                                                alt="Image placeholder"
-                                                src="assets/img/icons/oil-well.svg"
-                                            />
+                                        <a class="avatar rounded-circle bg-white mr-3" href="javascript:void(0)">
+                                            <img alt="Image placeholder" src="assets/img/icons/oil-well.svg" />
                                         </a>
-                          
+
                                         <div class="media-body">
                                             <span class="name mb-0 text-sm">
                                                 Item 1
@@ -76,22 +70,17 @@
                                     <span class="badge badge-pill badge-md badge-success">Completed</span>
                                 </td>
                                 <td>
-                                    <button class="btn btn-primary btn-sm" [routerLink]="['/admin/instruction/details']">View</button>
+                                    <button class="btn btn-primary btn-sm"
+                                        [routerLink]="['/admin/instruction/details']">View</button>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">
                                     <div class="media align-items-center">
-                                        <a
-                                          class="avatar rounded-circle bg-white mr-3"
-                                          href="javascript:void(0)"
-                                        >
-                                            <img
-                                                alt="Image placeholder"
-                                                src="assets/img/icons/oil-well.svg"
-                                            />
+                                        <a class="avatar rounded-circle bg-white mr-3" href="javascript:void(0)">
+                                            <img alt="Image placeholder" src="assets/img/icons/oil-well.svg" />
                                         </a>
-                          
+
                                         <div class="media-body">
                                             <span class="name mb-0 text-sm">
                                                 Item 2
@@ -106,22 +95,17 @@
                                     <span class="badge badge-pill badge-md badge-warning">Pending</span>
                                 </td>
                                 <td>
-                                    <button class="btn btn-primary btn-sm" [routerLink]="['/admin/instruction/details']">View</button>
+                                    <button class="btn btn-primary btn-sm"
+                                        [routerLink]="['/admin/instruction/details']">View</button>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">
                                     <div class="media align-items-center">
-                                        <a
-                                          class="avatar rounded-circle bg-white mr-3"
-                                          href="javascript:void(0)"
-                                        >
-                                            <img
-                                                alt="Image placeholder"
-                                                src="assets/img/icons/oil-well.svg"
-                                            />
+                                        <a class="avatar rounded-circle bg-white mr-3" href="javascript:void(0)">
+                                            <img alt="Image placeholder" src="assets/img/icons/oil-well.svg" />
                                         </a>
-                          
+
                                         <div class="media-body">
                                             <span class="name mb-0 text-sm">
                                                 Item 3
@@ -136,22 +120,17 @@
                                     <span class="badge badge-pill badge-md badge-success">Completed</span>
                                 </td>
                                 <td>
-                                    <button class="btn btn-primary btn-sm" [routerLink]="['/admin/instruction/details']">View</button>
+                                    <button class="btn btn-primary btn-sm"
+                                        [routerLink]="['/admin/instruction/details']">View</button>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">
                                     <div class="media align-items-center">
-                                        <a
-                                          class="avatar rounded-circle bg-white mr-3"
-                                          href="javascript:void(0)"
-                                        >
-                                            <img
-                                                alt="Image placeholder"
-                                                src="assets/img/icons/oil-well.svg"
-                                            />
+                                        <a class="avatar rounded-circle bg-white mr-3" href="javascript:void(0)">
+                                            <img alt="Image placeholder" src="assets/img/icons/oil-well.svg" />
                                         </a>
-                          
+
                                         <div class="media-body">
                                             <span class="name mb-0 text-sm">
                                                 Item 4
@@ -166,22 +145,17 @@
                                     <span class="badge badge-pill badge-md badge-warning">Pending</span>
                                 </td>
                                 <td>
-                                    <button class="btn btn-primary btn-sm" [routerLink]="['/admin/instruction/details']">View</button>
+                                    <button class="btn btn-primary btn-sm"
+                                        [routerLink]="['/admin/instruction/details']">View</button>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">
                                     <div class="media align-items-center">
-                                        <a
-                                          class="avatar rounded-circle bg-white mr-3"
-                                          href="javascript:void(0)"
-                                        >
-                                            <img
-                                                alt="Image placeholder"
-                                                src="assets/img/icons/oil-well.svg"
-                                            />
+                                        <a class="avatar rounded-circle bg-white mr-3" href="javascript:void(0)">
+                                            <img alt="Image placeholder" src="assets/img/icons/oil-well.svg" />
                                         </a>
-                          
+
                                         <div class="media-body">
                                             <span class="name mb-0 text-sm">
                                                 Item 5
@@ -196,7 +170,8 @@
                                     <span class="badge badge-pill badge-md badge-success">Completed</span>
                                 </td>
                                 <td>
-                                    <button class="btn btn-primary btn-sm" [routerLink]="['/admin/instruction/details']">View</button>
+                                    <button class="btn btn-primary btn-sm"
+                                        [routerLink]="['/admin/instruction/details']">View</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -206,3 +181,60 @@
         </div>
     </div>
 </div>
+
+<ng-template #modalAdd>
+    <div class=" modal-header">
+        <h6 class=" modal-title" id="modal-title-default">
+            Add Instruction
+        </h6>
+
+        <button aria-label="Close" class=" close" data-dismiss="modal" type="button" (click)="defaultModal.hide()">
+            <span aria-hidden="true"> × </span>
+        </button>
+    </div>
+
+    <div class=" modal-body">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label class="form-control-label">Well</label>
+                    <input class="form-control form-control-sm" placeholder="Enter well">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label class="form-control-label">Rig</label>
+                    <input class="form-control form-control-sm" placeholder="Enter rig">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label class="form-control-label">Date</label>
+                    <input class="form-control form-control-sm" placeholder="Enter date" type="date">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label class="form-control-label">PIC</label>
+                    <input class="form-control form-control-sm" placeholder="Enter PIC name">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label">Instruction Checklist</label>
+            <textarea class="form-control form-control-sm" placeholder="Enter instruction checklist"></textarea>
+        </div>
+    </div>
+
+    <div class=" modal-footer">
+        <button class=" btn btn-success" type="button">
+            Save
+        </button>
+
+        <button class=" btn btn-link ml-auto" data-dismiss="modal" type="button" (click)="defaultModal.hide()">
+            Close
+        </button>
+    </div>
+</ng-template>

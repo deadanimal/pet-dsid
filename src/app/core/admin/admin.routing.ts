@@ -11,6 +11,7 @@ import { DatabaseVendorComponent } from './database-vendor/database-vendor.compo
 import { NoticeComponent } from './notice/notice.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SettingsComponent } from './settings/settings.component';
+import { NoticeDetailComponent } from './notice-detail/notice-detail.component';
 
 export const AdminRoutes: Routes = [
     {
@@ -64,7 +65,16 @@ export const AdminRoutes: Routes = [
             },
             {
                 path: 'notice',
-                component: NoticeComponent
+                children: [
+                    {
+                        path: 'list',
+                        component: NoticeComponent
+                    },
+                    {
+                        path: 'details',
+                        component: NoticeDetailComponent
+                    }
+                ]
             },
             {
                 path: 'profile',
